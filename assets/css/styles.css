@@ -148,3 +148,18 @@
   height: 65px;
 }
 
+#goToForm {
+  scroll-margin-top: 100px;
+}
+
+.breadcrumb {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+@media (min-width: 768px) {
+  .breadcrumb {
+    margin-left: 76px;
+  }
+}
+
