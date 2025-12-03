@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Courgette&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700&amp;display=swap">
     <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/aos.min.css">
     <link rel="stylesheet" href="assets/css/animate.min.css">
     <link rel="stylesheet" href="assets/css/Animated-Type-Heading-BS5.css">
     <link rel="stylesheet" href="assets/css/Bold-BS4-Footer-Big-Logo.css">
@@ -18,6 +19,7 @@
     <link rel="stylesheet" href="assets/css/Hero-Carousel-images.css">
     <link rel="stylesheet" href="assets/css/Loading-Page-Animation.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/Ultimate-Back-To-Top-Button.css">
 </head>
 
 <body>
@@ -33,53 +35,61 @@
             </div>
         </div>
     </nav>
-    <ol class="breadcrumb justify-content-around justify-content-sm-around justify-content-md-start justify-content-lg-start justify-content-xl-start justify-content-xxl-start">
-        <li class="breadcrumb-item"><a href="index.html"><span>Home</span></a></li>
-        <li class="breadcrumb-item"><a href="#"><span>About Us</span></a></li>
-        <li class="breadcrumb-item"><a href="#"><span>Contact Us&nbsp;</span></a></li>
-    </ol>
-    <div class="container-fluid" style="background: url(&quot;assets/img/seller-talking-customer-about-car-dealer-future-vehicle-owner-rental-center-service.webp&quot;) center / auto no-repeat, linear-gradient(180deg, var(--bs-warning) 0%, #3e8ce4 47%), #3e8ce4;">				<div class="caption v-middle text-center">
+    <div class="container-fluid containerforabout">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="display-4 h1ForAbout" style="font-family: Montserrat, sans-serif;font-weight: bold;">About Us</h1>
+            </div>
+        </div>
+    </div>
+    <div id="loading" class="hidden">
+        <div class="d-flex d-xxl-flex justify-content-center align-items-center justify-content-xxl-center" style="width: 100%;height: 100vh;position: absolute;"><img class="img-fluid" id="loader" src="assets/img/Loading.gif"></div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p class="pBelow">Go to<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-dot">
+                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"></path>
+                    </svg><a href="#contactUs">Contact</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">				<div class="caption v-middle text-center">
 					<h1 class="cd-headline clip">
 			            <span class="blc">We | </span>
 			            <span class="cd-words-wrapper">
-			              <b class="is-visible">Sell.</b>
-			              <b>Buy.</b>
-			              <b>Clear.</b>
+			              <b class="is-visible" style="color: #ffc107;">Sell.</b>
+			              <b style="color: rgb(51,171,201);">Buy.</b>
+			              <b style="color: black;">Clear.</b>
 			            </span>
 	          		</h1>
 				</div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-        <section class="position-relative py-4 py-xl-5" data-bs-smooth-scroll="true" data-bs-target="#goToForm" data-bs-spy="scroll" style="margin-top: -24px;">
-            <h2 class="text-center mb-4" id="goToForm"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-32 0 512 512" width="1em" height="1em" fill="currentColor">
-                    <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. -->
-                    <path d="M384 432c8.8 0 16-7.2 16-16l0-320c0-8.8-7.2-16-16-16L64 80c-8.8 0-16 7.2-16 16l0 320c0 8.8 7.2 16 16 16l320 0zm64-16c0 35.3-28.7 64-64 64L64 480c-35.3 0-64-28.7-64-64L0 96C0 60.7 28.7 32 64 32l320 0c35.3 0 64 28.7 64 64l0 320zM224 352c-6.7 0-13-2.8-17.6-7.7l-104-112c-6.5-7-8.2-17.2-4.4-25.9s12.5-14.4 22-14.4l208 0c9.5 0 18.2 5.7 22 14.4s2.1 18.9-4.4 25.9l-104 112c-4.5 4.9-10.9 7.7-17.6 7.7z"></path>
-                </svg></h2>
-            <div class="container position-relative">
-                <div class="row d-flex justify-content-center">
-                    <div class="col-md-8 col-lg-6 col-xl-5 col-xxl-4">
-                        <div class="card mb-5">
-                            <div class="card-body p-sm-5">
-                                <h2 class="text-center mb-4">Order Clearing Service/<br>Sell A Car</h2>
-                                <form>
-                                    <div class="mb-3"><input class="form-control" type="text" id="name-2" name="name" placeholder="Name" autocomplete="on" required=""></div>
-                                    <div class="mb-3"><input class="form-control" type="tel" placeholder="Telephone" inputmode="tel" required=""></div>
-                                    <div class="mb-3"><input class="form-control" type="email" id="email-1" name="email" placeholder="Email" autofocus="" required="" inputmode="email"></div>
-                                    <div class="form-check form-check-inline" style="margin-bottom: 0px;"><input class="form-check-input" type="radio" id="formCheck-1" required="" name="service" value="Sell A CAR"><label class="form-check-label" id="sell" for="formCheck-1" style="margin-bottom: 0px;">Sell a Car</label></div>
-                                    <div class="form-check form-check-inline" style="margin-bottom: 0px;"><input class="form-check-input" type="radio" id="formCheck-2" required="" name="service" value="Clearing"><label class="form-check-label" id="clear" for="formCheck-2" style="margin-bottom: 0px;">Clearing Service</label></div>
-                                    <div class="mb-3"></div>
-                                    <div class="mb-3"><textarea class="form-control" id="message-2" name="message" rows="6" placeholder="Additional Information........" autocomplete="on" spellcheck="true"></textarea></div>
-                                    <div class="d-flex justify-content-center"><input class="btn btn-primary flex-grow-1 flex-shrink-1" type="submit" value="Send" required=""></div>
-                                </form>
+</div>
+        <div class="row">
+            <div class="col">
+                <section class="py-4 py-xl-5">
+                    <div class="container">
+                        <div class="bg-dark border rounded border-0 border-dark overflow-hidden">
+                            <div class="row g-0">
+                                <div class="col-md-6">
+                                    <div class="text-white p-4 p-md-5">
+                                        <h2 class="fw-bold text-white mb-3">Biben dum fringi dictum, augue purus</h2>
+                                        <p class="mb-4">Tincidunt laoreet leo, adipiscing taciti tempor. Primis senectus sapien, risus donec ad fusce augue interdum.</p>
+                                        <div class="my-3"><a class="btn btn-primary btn-lg me-2" role="button" href="#">Button</a><a class="btn btn-light btn-lg" role="button" href="#">Button</a></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 order-first order-md-last" style="min-height: 250px;"><img class="w-100 h-100 fit-cover" src="assets/img/WhatsApp%20Image%202025-12-01%20at%2021.11.08_4c7857f0.jpg"></div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </section>
             </div>
-        </section>
+        </div>
     </div>
-    <section class="position-relative py-4 py-xl-5">
+    <section id="contactUs" class="position-relative py-4 py-xl-5" data-bs-spy="scroll" data-bs-smooth-scroll="true" data-bs-target="contactUs">
         <div class="container position-relative">
             <div class="row mb-5">
                 <div class="col-md-8 col-xl-6 text-center mx-auto">
@@ -131,8 +141,97 @@
                 </div>
             </div>
         </div>
-    </section><iframe allowfullscreen="" frameborder="0" loading="lazy" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAVOGCYDte62Cf0bcVVV-BbT-uXhhzYBhE&amp;q=Paris%2C+France&amp;zoom=11" width="100%" height="400"></iframe>
+    </section>
+    <footer>
+        <footer id="myFooter">
+            <div class="container-fluid">
+                <div class="row text-center">
+                    <div class="col-auto">
+                        <h1 class="logo" style="margin-top:30px;"><a href="#">&nbsp;<img class="img-fluid" src="assets/img/perpet_carLogo.png" width="64" height="64" alt="perpet Logo">&nbsp;</a></h1>
+                    </div>
+                    <div class="col">
+                        <h5>Get started</h5>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#">Downloads<br></a></li>
+                            <li><a href="#">Sign Up</a></li>
+                            <li><a href="#">Other Links</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-auto col-sm-6 col-md-2">
+                        <h5>Our Company</h5>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Company Information<br></a></li>
+                            <li><a href="#">Reviews</a></li>
+                            <li><a href="#">Contacts</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-auto col-sm-8 col-md-2">
+                        <h5>Support</h5>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Help Desk<br></a></li>
+                            <li><a href="#">Forums</a></li>
+                            <li><a href="#">External Links</a></li>
+                        </ul>
+                    </div>
+                    <div class="col m-sm-auto m-md-auto social-networks">
+                        <div></div><a class="facebook" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-96 0 512 512" width="1em" height="1em" fill="currentColor">
+                                <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. -->
+                                <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path>
+                            </svg></a><a class="twitter" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" fill="currentColor">
+                                <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. -->
+                                <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
+                            </svg></a><a class="google" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -64 640 640" width="1em" height="1em" fill="currentColor">
+                                <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. -->
+                                <path d="M386.061 228.496c1.834 9.692 3.143 19.384 3.143 31.956C389.204 370.205 315.599 448 204.8 448c-106.084 0-192-85.915-192-192s85.916-192 192-192c51.864 0 95.083 18.859 128.611 50.292l-52.126 50.03c-14.145-13.621-39.028-29.599-76.485-29.599-65.484 0-118.92 54.221-118.92 121.277 0 67.056 53.436 121.277 118.92 121.277 75.961 0 104.513-54.745 108.965-82.773H204.8v-66.009h181.261zm185.406 6.437V179.2h-56.001v55.733h-55.733v56.001h55.733v55.733h56.001v-55.733H627.2v-56.001h-55.733z"></path>
+                            </svg></a><a class="linkedin" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-32 0 512 512" width="1em" height="1em" fill="currentColor">
+                                <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. -->
+                                <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path>
+                            </svg></a><button class="btn btn-primary" style="margin-top:20px;" type="button">Contact Us</button>
+                    </div>
+                </div>
+                <div class="row footer-copyright" style="margin-bottom: 4px;">
+                    <div class="col">
+                        <p>Copyright <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" fill="currentColor">
+                                <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. -->
+                                <path d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM199.4 312.6c-31.2-31.2-31.2-81.9 0-113.1s81.9-31.2 113.1 0c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9c-50-50-131-50-181 0s-50 131 0 181s131 50 181 0c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0c-31.2 31.2-81.9 31.2-113.1 0z"></path>
+                            </svg>&nbsp;2026 Perpet</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </footer>
+    <div data-aos="fade-up" data-aos-offset="1400" id="btop-btn"><a class="d-block" href="#" target="_top" title="Back To Top"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-32 0 512 512" width="1em" height="1em" fill="currentColor" style="margin-bottom: 0px;">
+                <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. -->
+                <path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM224 160c6.7 0 13 2.8 17.6 7.7l104 112c6.5 7 8.2 17.2 4.4 25.9s-12.5 14.4-22 14.4H120c-9.5 0-18.2-5.7-22-14.4s-2.1-18.9 4.4-25.9l104-112c4.5-4.9 10.9-7.7 17.6-7.7z"></path>
+            </svg></a></div>
+    <section id="goToForm" class="position-relative py-4 py-xl-5" data-bs-smooth-scroll="true" data-bs-target="#goToForm" data-bs-spy="scroll" style="margin-top: -24px;">
+        <div class="container position-relative">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-8 col-lg-6 col-xl-5 col-xxl-4">
+                    <div class="card mb-5">
+                        <div class="card-body p-sm-5">
+                            <h2 class="text-center mb-4">Order Clearing Service/<br>Sell A Car</h2>
+                            <form>
+                                <div class="mb-3"><input class="form-control" type="text" id="name-2" name="name" placeholder="Name" autocomplete="on" required=""></div>
+                                <div class="mb-3"><input class="form-control" type="tel" placeholder="Telephone" inputmode="tel" required=""></div>
+                                <div class="mb-3"><input class="form-control" type="email" id="email-1" name="email" placeholder="Email" required="" inputmode="email"></div>
+                                <div class="form-check form-check-inline" style="margin-bottom: 0px;"><input class="form-check-input" type="radio" id="formCheck-1" required="" name="service" value="Sell A CAR"><label class="form-check-label" id="sell" for="formCheck-1" style="margin-bottom: 0px;">Sell a Car</label></div>
+                                <div class="form-check form-check-inline" style="margin-bottom: 0px;"><input class="form-check-input" type="radio" id="formCheck-2" required="" name="service" value="Clearing"><label class="form-check-label" id="clear" for="formCheck-2" style="margin-bottom: 0px;">Clearing Service</label></div>
+                                <div class="mb-3"></div>
+                                <div class="mb-3"><textarea class="form-control" id="message-2" name="message" rows="6" placeholder="Additional Information........" autocomplete="on" spellcheck="true"></textarea></div>
+                                <div class="d-flex justify-content-center"><input class="btn btn-primary flex-grow-1 flex-shrink-1" type="submit" value="Send" required=""></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/aos.min.js"></script>
     <script src="assets/js/smart-forms.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
     <script src="assets/js/Animated-Type-Heading-BS5-Animated-Type-Heading.js"></script>

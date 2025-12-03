@@ -91,7 +91,7 @@
 }
 
 .caroSlideThreeLittleText {
-  text-shadow: -1px 1px 4px rgba(58,255,255,0.73);
+  text-shadow: -3px -3px 0px rgb(0,0,0);
 }
 
 @media (max-width: 570px) {
@@ -157,9 +157,21 @@
   margin-bottom: 8px;
 }
 
-@media (min-width: 768px) {
+@media  {
   .breadcrumb {
     margin-left: 76px;
   }
+}
+
+#contactUs {
+  scroll-margin-top: 100px;
+}
+
+.sectionIntro {
+  background: linear-gradient(rgba(255,255,255,0.57), rgba(255,193,7,0.64) 4%, rgba(62,211,248,0.74) 66%, rgba(58,255,255,0) 76%, rgba(58,255,255,0) 92%);
+}
+
+.caption.v-middle {
+  color: #ffc107;
 }
 

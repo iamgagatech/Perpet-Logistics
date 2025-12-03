@@ -41,3 +41,20 @@
   color: white;
 }
 
+.h1ForAbout {
+  color: #2bc5d5;
+  text-align: center;
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+.containerforabout {
+  border-radius: 154px;
+  border-bottom-width: 14px;
+  border-bottom-style: ridge;
+}
+
+.pBelow {
+  font-family: Courgette, serif;
+}
+
