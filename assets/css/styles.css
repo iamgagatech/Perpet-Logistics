@@ -189,3 +189,22 @@
 
 /* button for back top ends */
 
+@media (max-width: 576px) {
+  .overlaydivSmall {
+    backdrop-filter: opacity(0.73) blur(0px) contrast(42%) saturate(92%);
+    -webkit-backdrop-filter: opacity(0.73) blur(0px) contrast(42%) saturate(92%);
+    filter: brightness(100%);
+    opacity: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .yChooseUsBig {
+    font-size: 53.704px;
+  }
+}
+
+.scrollTop {
+  scroll-margin-top: 105px;
+}
+

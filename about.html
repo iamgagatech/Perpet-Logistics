@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Courgette&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700&amp;display=swap">
     <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/bs-theme-overrides.css">
     <link rel="stylesheet" href="assets/css/aos.min.css">
     <link rel="stylesheet" href="assets/css/animate.min.css">
     <link rel="stylesheet" href="assets/css/animated-services.css">
@@ -18,6 +19,8 @@
     <link rel="stylesheet" href="assets/css/Bold-BS4-Footer-Big-Logo.css">
     <link rel="stylesheet" href="assets/css/Contact-Details-icons.css">
     <link rel="stylesheet" href="assets/css/Hero-Carousel-images.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/Incrementing-Animation.css">
     <link rel="stylesheet" href="assets/css/Loading-Page-Animation.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
@@ -35,9 +38,6 @@
             </div>
         </div>
     </nav>
-    <div id="loading" class="hidden">
-        <div class="d-flex d-xxl-flex justify-content-center align-items-center justify-content-xxl-center" style="width: 100%;height: 100vh;position: absolute;"><img class="img-fluid" id="loader" src="assets/img/Loading.gif"></div>
-    </div>
     <div class="container-fluid containerforabout">
         <div class="row">
             <div class="col-md-12">
@@ -45,17 +45,18 @@
             </div>
         </div>
     </div>
-    <div class="container-md">
-        <div class="row">
-            <div class="col-md-12">
-                <p class="pBelow">Go to<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-dot">
-                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"></path>
-                    </svg><a href="#contactUs">Contact</a></p>
+    <main>
+        <div class="container-md">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="pBelow">Go to<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-dot">
+                            <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"></path>
+                        </svg><a href="#contactUs">Contact</a></p>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="container-fluid">
-        <div class="row">				<div class="caption v-middle text-center">
+        <div class="container-fluid">
+            <div class="row">				<div class="caption v-middle text-center">
 					<h1 class="cd-headline clip">
 			            <span class="blc">We | </span>
 			            <span class="cd-words-wrapper">
@@ -68,33 +69,87 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </div>
-        <div class="row">
-            <div class="col">
-                <section class="py-4 py-xl-5">
-                    <div class="container">
-                        <div class="bg-dark border rounded border-0 border-dark overflow-hidden">
-                            <div class="row g-0">
-                                <div class="col-md-6">
-                                    <div class="text-white p-4 p-md-5">
-                                        <h2 class="fw-bold mb-3" style="color: rgba(62,211,248,0.74);">Trusted Car Deals &amp; Clearing Services</h2>
-                                        <p class="mb-4" style="font-size: 18px;"><br><br>At&nbsp;<strong>Perpet</strong>, we make buying and selling cars completely stress-free. Whether you’re looking for a clean foreign-used ride, selling your current vehicle, or importing your next machine, we handle everything with full transparency and professionalism.<br><br><br></p>
-                                        <div class="my-3"><a class="btn btn-warning me-2 btttn" role="button" href="#goToForm">SELL A CAR</a><a class="btn btn-outline-warning me-2 btttn" role="button" href="inventory.html">COLLECTION</a></div>
+            <div class="row">
+                <div class="col">
+                    <section class="py-4 py-xl-5">
+                        <div class="container">
+                            <div class="bg-dark border rounded border-0 border-dark overflow-hidden">
+                                <div class="row g-0">
+                                    <div class="col-md-6">
+                                        <div class="text-white p-4 p-md-5">
+                                            <h2 class="fw-bold mb-3" style="color: rgba(62,211,248,0.74);">Trusted Car Deals &amp; Clearing Services</h2>
+                                            <p class="mb-4" style="font-size: 18px;"><br><br>At&nbsp;<strong>Perpet</strong>, we make buying and selling cars completely stress-free. Whether you’re looking for a clean foreign-used ride, selling your current vehicle, or importing your next machine, we handle everything with full <strong>transparency</strong> and professionalism.</p>
+                                            <div class="my-3"><a class="btn btn-warning me-2 btttn" role="button" href="#goToForm">SELL A CAR</a><a class="btn btn-outline-warning me-2 btttn" role="button" href="inventory.html">COLLECTION</a></div>
+                                        </div>
                                     </div>
+                                    <div class="col-md-6 order-first order-md-last" style="min-height: 250px;"><img class="w-100 h-100 fit-cover" src="assets/img/WhatsApp%20Image%202025-12-01%20at%2021.11.08_4c7857f0.jpg"></div>
                                 </div>
-                                <div class="col-md-6 order-first order-md-last" style="min-height: 250px;"><img class="w-100 h-100 fit-cover" src="assets/img/WhatsApp%20Image%202025-12-01%20at%2021.11.08_4c7857f0.jpg"></div>
                             </div>
                         </div>
-                    </div>
-                </section>
+                    </section>
+                </div>
             </div>
         </div>
-    </div>
+        <section data-aos="fade-up" data-aos-duration="400" data-aos-once="true" class="font-dark">
+            <div class="container">
+                <h3 data-aos="fade-up" data-aos-duration="400" data-aos-delay="200" data-aos-once="true" class="text-center all-capital p-4" style="font-size: 30px;font-weight: 300;line-height: 38px;letter-spacing: 2px;">Perpet&nbsp;<span class="prev-year"></span> STATISTICS</h3>
+                <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-4 row-cols-xl-4 row-cols-xxl-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="150" data-aos-once="true" style="padding-top: 20px;padding-bottom: 40px;">
+                    <div class="col">
+                        <div><span class="Justify-Flex-Center purecounter counter-font count plus" data-purecounter-start="0" data-purecounter-end="20" data-purecounter-duration="2">40</span>
+                            <p class="text-center text-uppercase">CONTAINERS CLEARED</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div><span class="Justify-Flex-Center purecounter counter-font plus" data-purecounter-start="0" data-purecounter-end="450" data-purecounter-duration="1">160</span>
+                            <p class="text-center text-uppercase">VEHICLES DELIVERED</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div><span class="Justify-Flex-Center purecounter counter-font plus-k" data-purecounter-start="0" data-purecounter-end="23" data-purecounter-duration="1">23</span>
+                            <p class="text-center text-uppercase">cLIENTS SERVED ACROSS NIGERIA</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div><span class="Justify-Flex-Center purecounter counter-font plus" data-purecounter-start="0" data-purecounter-end="275" data-purecounter-duration="1">10</span>
+                            <p class="text-center text-uppercase">cOMBINED INDUSTRY EXPERIENCE</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <section id="goToForm" class="position-relative py-4 py-xl-5" data-bs-smooth-scroll="true" data-bs-target="#goToForm" data-bs-spy="scroll" style="margin-top: -24px;">
+        <div class="container position-relative" style="margin-top: 25px;">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-8 col-lg-6 col-xl-5 col-xxl-4">
+                    <h2 style="text-align: center;">Request For Service<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-down-left-square-fill">
+                            <path d="M2 16a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2zm8.096-10.803L6 9.293V6.525a.5.5 0 0 0-1 0V10.5a.5.5 0 0 0 .5.5h3.975a.5.5 0 0 0 0-1H6.707l4.096-4.096a.5.5 0 1 0-.707-.707z"></path>
+                        </svg></h2>
+                    <div class="card mb-5">
+                        <div class="card-body p-sm-5">
+                            <h2 class="text-center mb-4">Order Clearing Service/<br>Sell A Car</h2>
+                            <form>
+                                <div class="mb-3"><input class="form-control" type="text" id="name-2" name="name" placeholder="Name" autocomplete="on" required=""></div>
+                                <div class="mb-3"><input class="form-control" type="tel" placeholder="Telephone" inputmode="tel" required=""></div>
+                                <div class="mb-3"><input class="form-control" type="email" id="email-1" name="email" placeholder="Email" required="" inputmode="email"></div>
+                                <div class="form-check form-check-inline" style="margin-bottom: 0px;"><input class="form-check-input" type="radio" id="formCheck-1" required="" name="service" value="Sell A CAR"><label class="form-check-label" id="sell" for="formCheck-1" style="margin-bottom: 0px;">Sell a Car</label></div>
+                                <div class="form-check form-check-inline" style="margin-bottom: 0px;"><input class="form-check-input" type="radio" id="formCheck-2" required="" name="service" value="Clearing"><label class="form-check-label" id="clear" for="formCheck-2" style="margin-bottom: 0px;">Clearing Service</label></div>
+                                <div class="mb-3"></div>
+                                <div class="mb-3"><textarea class="form-control" id="message-2" name="message" rows="6" placeholder="Additional Information........" autocomplete="on" spellcheck="true"></textarea></div>
+                                <div class="d-flex justify-content-center"><input class="btn btn-primary flex-grow-1 flex-shrink-1" type="submit" value="Send" required=""></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section id="contactUs" class="position-relative py-4 py-xl-5" data-bs-spy="scroll" data-bs-smooth-scroll="true" data-bs-target="contactUs">
         <div class="container position-relative">
             <div class="row mb-5">
                 <div class="col-md-8 col-xl-6 text-center mx-auto">
-                    <h2>Contact us</h2>
-                    <p>Curae hendrerit donec commodo hendrerit egestas tempus, turpis facilisis nostra nunc. Vestibulum dui eget ultrices.</p>
+                    <h2>Contact Us</h2>
+                    <p>Have a question or need assistance? Send us a message and our team will respond promptly with the information you need.</p>
                 </div>
             </div>
             <div class="row d-flex justify-content-center">
@@ -106,7 +161,7 @@
                                 </svg></div>
                             <div class="px-2">
                                 <h6 class="mb-0">Phone</h6>
-                                <p class="mb-0">+123456789</p>
+                                <p class="mb-0">+2349034277995</p>
                             </div>
                         </div>
                         <div class="d-flex align-items-center p-3">
@@ -115,7 +170,7 @@
                                 </svg></div>
                             <div class="px-2">
                                 <h6 class="mb-0">Email</h6>
-                                <p class="mb-0">info@example.com</p>
+                                <p class="mb-0">perpetlogistics@gmail.com</p>
                             </div>
                         </div>
                         <div class="d-flex align-items-center p-3">
@@ -124,7 +179,7 @@
                                 </svg></div>
                             <div class="px-2">
                                 <h6 class="mb-0">Location</h6>
-                                <p class="mb-0">12 Example Street</p>
+                                <p class="mb-0">12 Wandamo Street</p>
                             </div>
                         </div>
                     </div>
@@ -195,7 +250,7 @@
                         <p>Copyright <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" fill="currentColor">
                                 <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. -->
                                 <path d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM199.4 312.6c-31.2-31.2-31.2-81.9 0-113.1s81.9-31.2 113.1 0c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9c-50-50-131-50-181 0s-50 131 0 181s131 50 181 0c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0c-31.2 31.2-81.9 31.2-113.1 0z"></path>
-                            </svg>&nbsp;2026 Perpet</p>
+                            </svg>&nbsp;<span class="year"></span>&nbsp;Perpet</p>
                     </div>
                 </div>
             </div>
@@ -205,34 +260,16 @@
                 <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. -->
                 <path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM224 160c6.7 0 13 2.8 17.6 7.7l104 112c6.5 7 8.2 17.2 4.4 25.9s-12.5 14.4-22 14.4H120c-9.5 0-18.2-5.7-22-14.4s-2.1-18.9 4.4-25.9l104-112c4.5-4.9 10.9-7.7 17.6-7.7z"></path>
             </svg></a></div>
-    <section id="goToForm" class="position-relative py-4 py-xl-5" data-bs-smooth-scroll="true" data-bs-target="#goToForm" data-bs-spy="scroll" style="margin-top: -24px;">
-        <div class="container position-relative">
-            <div class="row d-flex justify-content-center">
-                <div class="col-md-8 col-lg-6 col-xl-5 col-xxl-4">
-                    <div class="card mb-5">
-                        <div class="card-body p-sm-5">
-                            <h2 class="text-center mb-4">Order Clearing Service/<br>Sell A Car</h2>
-                            <form>
-                                <div class="mb-3"><input class="form-control" type="text" id="name-2" name="name" placeholder="Name" autocomplete="on" required=""></div>
-                                <div class="mb-3"><input class="form-control" type="tel" placeholder="Telephone" inputmode="tel" required=""></div>
-                                <div class="mb-3"><input class="form-control" type="email" id="email-1" name="email" placeholder="Email" required="" inputmode="email"></div>
-                                <div class="form-check form-check-inline" style="margin-bottom: 0px;"><input class="form-check-input" type="radio" id="formCheck-1" required="" name="service" value="Sell A CAR"><label class="form-check-label" id="sell" for="formCheck-1" style="margin-bottom: 0px;">Sell a Car</label></div>
-                                <div class="form-check form-check-inline" style="margin-bottom: 0px;"><input class="form-check-input" type="radio" id="formCheck-2" required="" name="service" value="Clearing"><label class="form-check-label" id="clear" for="formCheck-2" style="margin-bottom: 0px;">Clearing Service</label></div>
-                                <div class="mb-3"></div>
-                                <div class="mb-3"><textarea class="form-control" id="message-2" name="message" rows="6" placeholder="Additional Information........" autocomplete="on" spellcheck="true"></textarea></div>
-                                <div class="d-flex justify-content-center"><input class="btn btn-primary flex-grow-1 flex-shrink-1" type="submit" value="Send" required=""></div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/aos.min.js"></script>
     <script src="assets/js/smart-forms.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
     <script src="assets/js/Animated-Type-Heading-BS5-Animated-Type-Heading.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="assets/js/Incrementing-Animation-Counter.js"></script>
+    <script src="assets/js/Loading-Page-Animation-loading-animation-load.js"></script>
+    <script src="assets/js/myjavascript.js"></script>
 </body>
 
 </html>
