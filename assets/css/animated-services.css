@@ -23,7 +23,7 @@
 }
 
 .services .icon-box:hover::before {
-  background: rgb(51,171,201);
+  background: var(--bs-primary);
   top: 0;
   border-radius: 0px;
 }
@@ -70,15 +70,22 @@
   }
 }
 
-@media (min-width: 768px) {
-  .listChooseUs {
-    font-size: 20px;
-  }
-}
-
 @media (max-width: 768px) {
   .hideForSmallScreen {
     display: none;
   }
+}
+
+.icon-box:hover {
+  transform: translateY(-11px) scale(1.04);
+}
+
+#servicesWeOffer {
+  width: 90%;
+  margin-left: 0px;
+  border-radius: 50px;
+  padding: 5px;
+  color: var(--bs-dark);
+  background: var(--bs-primary);
 }
 

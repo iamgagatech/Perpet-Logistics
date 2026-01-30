@@ -1,0 +1,90 @@
+:root {
+  --orbit-speed: 25s;
+  --item-width: 100px;
+}
+
+/* 1. Viewport: Forces Horizontal & Adds Edge Fades */
+
+.orbit-viewport {
+  width: 100%;
+  max-width: 1200px;
+  margin: 80px auto;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  padding: 40px 0;
+  -webkit-mask-image: linear-gradient( to right, transparent, black 15%, black 85%, transparent );
+  mask-image: linear-gradient( to right, transparent, black 15%, black 85%, transparent );
+  margin-top: 3px;
+  margin-bottom: 3px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* 2. Track: The horizontal scrolling container */
+
+.orbit-track {
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  gap: 2rem;
+  padding-right: 2rem;
+  animation: orbit-scroll var(--orbit-speed) linear infinite;
+}
+
+/* 3. Pause on hover */
+
+.orbit-viewport:hover .orbit-track {
+  animation-play-state: paused;
+}
+
+/* 4. The Individual Glow Card */
+
+.orbit-item {
+  width: var(--item-width);
+  height: 80px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  border: 1px gold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+  cursor: none;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* 5. Logo Styling */
+
+.orbit-logo {
+  max-width: 70%;
+  height: auto;
+  filter: grayscale(1) opacity(0.6);
+  transition: all 0.4s ease;
+}
+
+/* 6. Interaction: Hover Ignite */
+
+.orbit-item:hover {
+  transform: scale(1.01) translateY(-4px);
+  border-color: var(--bs-info);
+  background: var(--bs-dark);
+  box-shadow: 0 10px 30px rgba(var(--bs-primary-rgb), 0.4), 0 0 15px rgba(var(--bs-info-rgb), 0.2);
+}
+
+.orbit-item:hover .orbit-logo {
+  filter: grayscale(0) opacity(1) drop-shadow(0 0 8px rgba(var(--bs-primary-rgb), 0.5));
+}
+
+/* 7. Scroll Animation */
+
+@keyframes orbit-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+

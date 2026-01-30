@@ -2,3 +2,16 @@
   object-fit: cover;
 }
 
+#carousel-1 {
+  height: 600px;
+  margin-top: -88px;
+}
+
+.cartIcon {
+  font-size: 41px;
+}
+
+.divBalancingBGS {
+  max-width: 912px;
+}
+

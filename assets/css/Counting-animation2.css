@@ -1,0 +1,27 @@
+.counter-font {
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 76px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+span.plus::after {
+  content: '+';
+}
+
+span.ps::after {
+  content: '%';
+}
+
+.Justify-Flex-Center {
+  display: flex;
+  justify-content: center;
+}
+
+.Justify-Flex-Center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
