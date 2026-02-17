@@ -54,10 +54,6 @@
   border-bottom-style: ridge;
 }
 
-.pBelow {
-  font-family: Courgette, serif;
-}
-
 @media (min-width: 992px) {
   .hdCaroWTP {
     margin-left: 65px;

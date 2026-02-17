@@ -1,6 +1,6 @@
 .navbar {
-  backdrop-filter: blur(3px);
-  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(9px);
   box-shadow: 1px 0px 11px 1px rgb(51,171,201);
   padding-bottom: 0px;
 }
@@ -50,6 +50,27 @@
   filter: brightness(136%);
 }
 
+/* Hero Beginning */
+
+.fit-cover {
+  object-fit: cover;
+}
+
+#carousel-1 {
+  height: 600px;
+  margin-top: -88px;
+}
+
+.cartIcon {
+  font-size: 41px;
+}
+
+.divBalancingBGS {
+  max-width: 912px;
+}
+
+/* Hero Ending */
+
 @media (min-width: 768px) {
   .caroLittleText {
     font-size: 36px;
@@ -90,10 +111,6 @@
   min-width: 4px;
 }
 
-.caroSlideThreeLittleText {
-  text-shadow: -3px -3px 0px rgb(0,0,0);
-}
-
 @media (max-width: 570px) {
   .alertForInventory {
     display: none;
@@ -111,7 +128,7 @@
 }
 
 .sectionIntro {
-  background: linear-gradient(var(--bs-light), var(--bs-warning) 4%, var(--bs-primary) 66%, var(--bs-body-bg) 76%, var(--bs-body-bg) 92%);
+  /*background: linear-gradient(var(--bs-light), var(--bs-warning) 4%, var(--bs-primary) 66%, var(--bs-body-bg) 76%, var(--bs-body-bg) 92%);*/
   margin-top: -27px;
 }
 
@@ -122,10 +139,6 @@
 /* button for back top begins */
 
 /* button for back top ends */
-
-.scrollTop {
-  scroll-margin-top: 105px;
-}
 
 @media (max-width: 768px) {
   .brandHeadingtab {
@@ -234,10 +247,6 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.prdToIntro {
-  text-shadow: 2px 2px 1px var(--bs-light);
-}
-
 .carousel-item > img {
   z-index: -1;
 }
@@ -251,5 +260,17 @@ h1, h2, h3, h4, h5, h6 {
 #contactUs > div {
   backdrop-filter: blur(3px) brightness(100%) contrast(111%) grayscale(100%) invert(0%) saturate(200%);
   -webkit-backdrop-filter: blur(3px) brightness(100%) contrast(111%) grayscale(100%) invert(0%) saturate(200%);
+}
+
+@media (min-width: 768px) {
+  .theme-switcher-sm {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .theme-switcher.md {
+    display: none;
+  }
 }
 
